@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.quadraticequationsolver.PrimaryController">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@primary.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="433.0" layoutX="93.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Logo.png" />
+         </image>
+      </ImageView>
+      <TextField id="a" fx:id="a" alignment="CENTER_RIGHT" layoutX="179.0" layoutY="192.0" prefHeight="14.0" prefWidth="40.0" promptText="0">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </TextField>
+      <Text fill="WHITE" layoutX="219.0" layoutY="209.0" stroke="WHITE" strokeWidth="0.7" text="x^2+" textAlignment="CENTER" wrappingWidth="40.0">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Text>
+      <TextField id="b" fx:id="b" alignment="CENTER_RIGHT" layoutX="260.0" layoutY="192.0" prefHeight="14.0" prefWidth="40.0" promptText="0">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </TextField>
+      <Text fill="WHITE" layoutX="300.0" layoutY="210.0" stroke="WHITE" strokeWidth="0.7" text="x+" textAlignment="CENTER" wrappingWidth="25.39453125">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Text>
+      <TextField id="c" fx:id="c" alignment="CENTER" layoutX="325.0" layoutY="191.0" prefHeight="14.0" prefWidth="40.0" promptText="0">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </TextField>
+      <Text fill="WHITE" layoutX="365.0" layoutY="209.0" stroke="WHITE" strokeWidth="0.7" text="=" textAlignment="CENTER" wrappingWidth="17.39453125">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </Text>
+      <TextField id="d" fx:id="d" alignment="CENTER" layoutX="382.0" layoutY="191.0" prefHeight="14.0" prefWidth="40.0" promptText="0">
+         <font>
+            <Font name="Cambria Math" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="214.0" layoutY="148.0" text="ENTER THE EQUATION:" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button id="solve" fx:id="solve" layoutX="270.0" layoutY="243.0" mnemonicParsing="false" onAction="#solve" text="SOLVE" textAlignment="CENTER">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label id="x" alignment="CENTER" layoutX="125.0" layoutY="293.0" prefHeight="34.0" prefWidth="351.0" textAlignment="CENTER" textFill="WHITE" fx:id="x">
+         <font>
+            <Font name="Cambria Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button id="clear" fx:id="clear" alignment="CENTER" layoutX="270.0" layoutY="392.0" mnemonicParsing="false" onAction="#clear" text="CLEAR">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="graph" layoutX="217.0" layoutY="351.0" mnemonicParsing="false" onAction="#graph" text="Generate Graph Online" textAlignment="CENTER">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
